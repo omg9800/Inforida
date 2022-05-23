@@ -1,0 +1,91 @@
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.form-bg {
+  background-color: #f2f6fc;
+  width: 100vw;
+  height: 100vh;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  min-width: 250px;
+  height: max-content;
+  background-image: linear-gradient(to top right, #cc2b5e, #753a88);
+  padding: 0 10% 3% 10%;
+  box-shadow: 0px 3px 0px black;
+}
+.form-container > h1 {
+  width: max-content;
+  margin: 5vh auto;
+}
+.list-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  padding: 0;
+}
+.item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.item > input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 8px 0px;
+  width: 100%;
+  background-image: linear-gradient(to top right, #cc2b5e, #753a88);
+  border-color: #f2f6fc;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #f5f5f5;
+  cursor: pointer;
+}
+
+.not {
+  color: whitesmoke;
+  margin-right: 15%;
+}
+
+.redirect {
+  color: lightblue;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.div-redirect {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center-bold {
+  text-align: center;
+}
