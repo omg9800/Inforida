@@ -7,36 +7,21 @@ import { updateSchool } from "../../services/service";
 import Input from "../Input/Input";
 
 const SchoolEditForm = () => {
+  const location = useLocation();
+  const { item } = location.state;
+
   const [school, setSchool] = useState({
-    name: "",
-    city: "",
-    phone: "",
-    pincode: "",
-    about: "",
-    mission: "",
-    vision: "",
-    logoUrl: "",
+    name: item.name,
+    city: item.city,
+    phone: item.phone,
+    pincode: item.pincode,
+    about: item.about,
+    mission: item.mission,
+    vision: item.vision,
+    logoUrl: item.logoUrl,
   });
 
   const navigate = useNavigate();
-  const location = useLocation();
-
-  useEffect(() => {
-    const item = location?.state?.item;
-    if (item) {
-      const transformedItem = {
-        name: item.name,
-        city: item.city,
-        phone: item.phone,
-        pincode: item.pincode,
-        about: item.about,
-        mission: item.mission,
-        vision: item.vision,
-        logoUrl: item.logoUrl,
-      };
-      setSchool(transformedItem);
-    }
-  }, []);
 
   const handleChange = (e) => {
     const name = e.target.name;
